@@ -1,0 +1,96 @@
+/* Apply background color to the full screen */
+body {
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    background-color: #f0f8ff; /* Light blue background (AliceBlue) */
+    font-family: Arial, sans-serif; /* Default font */
+    height: 100%; /* Ensure it covers the full height */
+}
+
+/* Main container for cards */
+.muow {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    gap: 10px; /* Space between cards */
+    justify-content: center; /* Center the cards horizontally */
+    padding: 20px; /* Padding around the cards */
+    max-width: 100%; /* Ensure it doesn't exceed the viewport width */
+    box-sizing: border-box; /* Include padding and border in calculations */
+}
+
+/* Individual card styles */
+.cartDis {
+    flex: 1 1 calc(20% - 20px); /* Fit 5 cards per row */
+    max-width: 180px; /* Max width of each card */
+    box-sizing: border-box; /* Include padding and border in calculations */
+    margin: 8px; /* Space between cards */
+    padding: 10px; /* Inner spacing */
+    border: 1px solid cornflowerblue;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* White background */
+    text-align: left;
+}
+
+/* Remove any potential extra padding/margins for headers and lists */
+.cartDis h2 {
+    font-size: 1rem;
+    color: #333;
+    margin: 6px 0; /* Compact spacing */
+}
+
+.cartDis h3 {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 6px 0;
+}
+
+.cartDis ul {
+    margin-top: 6px;
+    padding-left: 10px; /* Compact padding */
+    list-style-position: inside; /* Adjust list style */
+}
+
+.cartDis ul li {
+    font-size: 0.8rem;
+    color: #444;
+    margin-bottom: 4px;
+}
+
+/* Small color indicator */
+.colorDecor {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 4px 0;
+    border: 1px solid #000;
+}
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    overflow-x: hidden; 
+} */
+
+.popUpClass {
+    position: absolute; /* Ensures it appears beside the button */
+    background-color: #9fffc7; /* Unique yellow color */
+    color: #000; /* Black text for better contrast */
+    padding: 10px; /* Padding for better appearance */
+    border: 1px solid #000; /* Border to make it distinct */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transform: translate(70%,-6%); /* Position it beside the button */
+    white-space: nowrap; /* Prevents text wrapping */
+    z-index: 10; /* Ensures it appears above other elements */
+  }
+  
+  button {
+    position: relative; /* Ensures proper alignment with the pop-up */
+  }
+  

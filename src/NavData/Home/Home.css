@@ -1,0 +1,78 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Home Component Styles */
+  .home-comp {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6e7dff, #ff61a6);
+    color: white;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Header Component Styles */
+  .home-comp h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  /* Paragraph Styles */
+  .home-comp p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    line-height: 1.6;
+    max-width: 700px;
+  }
+  
+  /* Hover Effect on Paragraph */
+  .home-comp p:hover {
+    color: #ffed4f;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out, color 0.3s ease;
+  }
+  
+  /* Button Styles */
+  .home-comp .cta-btn {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    color: white;
+    background: #ff61a6;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .home-comp .cta-btn:hover {
+    background: #6e7dff;
+    transform: translateY(-5px);
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .home-comp h1 {
+      font-size: 2.5rem;
+    }
+  
+    .home-comp p {
+      font-size: 1rem;
+    }
+  
+    .home-comp {
+      padding: 15px;
+    }
+  }
+  

@@ -1,0 +1,14 @@
+.faqOuter{
+    width: 50%;
+    margin: auto;
+}
+.faqItems{
+    border: 1px royalblue solid;
+}
+.faq-heading {
+    font-size: 30px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:blue;
+    text-align: center; 
+    margin: 0 auto; 
+}

@@ -1,0 +1,73 @@
+/* General Tab Styling */
+.tabView {
+    display: flex; /* Arrange buttons in a row by default */
+    justify-content: space-around; /* Evenly distribute buttons */
+    border-bottom: 2px solid #ccc; /* Border for separation */
+    padding: 10px 0;
+    margin-bottom: 10px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.tabView button {
+    background-color: #f9f9f9; /* Light background for tabs */
+    color: #333;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex: 1; /* Make all buttons equal width */
+    text-align: center; /* Center align text */
+    max-width: 200px; /* Prevent buttons from becoming too wide */
+    box-sizing: border-box; /* Include padding and borders in size */
+}
+
+.tabView button:hover {
+    background-color: #e0e0e0;
+}
+
+.tabView button.active {
+    background-color: #fff;
+    border-bottom: 2px solid #007bff;
+    font-weight: bold;
+    color: #007bff;
+}
+
+h3 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+    line-height: 1.5;
+    text-align: center; /* Center description on small screens */
+}
+
+/* Media Query for Small Screens (e.g., Mobile) */
+@media (max-width: 768px) {
+    .tabView {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: stretch; /* Stretch buttons to full width */
+    }
+
+    .tabView button {
+        flex: none; /* Remove equal width on small screens */
+        width: 100%; /* Full width buttons */
+        margin-bottom: 5px; /* Add spacing between buttons */
+    }
+
+    h3 {
+        font-size: 16px; /* Slightly smaller description text */
+    }
+}
+
+/* Media Query for Very Small Screens (e.g., Extra Small Devices) */
+@media (max-width: 480px) {
+    .tabView button {
+        padding: 8px 10px; /* Reduce padding for smaller screens */
+        font-size: 14px; /* Smaller font for buttons */
+    }
+
+    h3 {
+        font-size: 14px; /* Smaller description text */
+    }
+}

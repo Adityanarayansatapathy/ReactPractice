@@ -1,0 +1,48 @@
+/* Styling for the entire component container */
+div {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styling for the header title */
+  h1 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  /* Styling for the navigation bar */
+  .navBar {
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the list container */
+  .navBar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Styling for list items */
+  .navBar ul li {
+    margin: 0 15px;
+  }
+  
+  /* Styling for links */
+  .navBar ul li a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navBar ul li a:hover {
+    color: #0056b3;
+  }
+  

@@ -1,0 +1,192 @@
+/* Full-cover styling for the error page */
+.error-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures the height covers the entire viewport */
+    margin: 0; /* Removes any default margins */
+    padding: 0; /* Resets padding for full coverage */
+    width: 100vw; /* Ensures the width covers the entire viewport */
+    background: linear-gradient(135deg, #5e19a8, #2575fc);
+    background-size: 400% 400%; /* Larger background for movement */
+    animation: gradientMove 10s ease infinite;
+    font-family: 'Poppins', sans-serif;
+    color: #d64242;
+    overflow: hidden;
+    position: fixed; /* Fixes the page to the viewport */
+    top: 0; /* Positions the page at the very top */
+    left: 0; /* Positions the page at the very left */
+    z-index: 1; /* Ensures it stays above other content */
+}
+
+/* Moving gradient background animation */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Background floating shapes for dynamic effects */
+.error-page::before,
+.error-page::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0));
+    border-radius: 50%;
+    animation: float 6s infinite ease-in-out;
+    z-index: 1;
+}
+
+.error-page::before {
+    top: 10%;
+    left: 15%;
+    animation-direction: normal;
+}
+
+.error-page::after {
+    bottom: 10%;
+    right: 15%;
+    animation-direction: reverse;
+    animation-delay: 3s;
+}
+
+/* Floating animation for shapes */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Content container */
+.error-content {
+    text-align: center;
+    padding: 20px;
+    max-width: 400px;
+    width: auto;
+    animation: fadeSlideIn 1s ease-in-out;
+    z-index: 2;
+}
+
+/* Title styling for 404 */
+.error-title {
+    font-size: 150px;
+    font-weight: bold;
+    margin: 0;
+    color: #ff758c;
+    text-shadow: 0 0 20px rgba(255, 117, 140, 1), 0 0 40px rgba(255, 117, 140, 0.8);
+    animation: pulseGlow 2s infinite, titleMove 3s ease-in-out infinite;
+}
+
+/* Glow effect for the title */
+@keyframes pulseGlow {
+    0% {
+        text-shadow: 0 0 15px rgba(255, 117, 140, 0.8), 0 0 30px rgba(255, 117, 140, 0.6);
+    }
+    50% {
+        text-shadow: 0 0 25px rgba(255, 117, 140, 1), 0 0 50px rgba(255, 117, 140, 0.8);
+    }
+    100% {
+        text-shadow: 0 0 15px rgba(255, 117, 140, 0.8), 0 0 30px rgba(255, 117, 140, 0.6);
+    }
+}
+
+/* Title movement animation */
+@keyframes titleMove {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Heading styling */
+.error-heading {
+    font-size: 26px;
+    margin: 15px 0;
+    color: #ffeb3b;
+    animation: fadeIn 1.5s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Fade-in animation for heading */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Description styling */
+.error-description {
+    font-size: 18px;
+    margin: 10px 0 20px;
+    color: #9ad6e7;
+    line-height: 1.8;
+}
+
+/* Link button styling */
+.error-link {
+    display: inline-block;
+    padding: 9px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(90deg, #ff758c, #3bc4ff);
+    border-radius: 20px;
+    text-decoration: none;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+  }
+
+/* Hover effects for the link button */
+.error-link:hover {
+    background: linear-gradient(90deg, #ffeb3b, #ff758c);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.7);
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Fade and slide-in animation */
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .error-title {
+        font-size: 100px;
+    }
+    .error-heading {
+        font-size: 18px;
+    }
+    .error-description {
+        font-size: 14px;
+    }
+    .error-link {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}

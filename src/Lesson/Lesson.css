@@ -1,0 +1,175 @@
+/* Global styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #ffe5ec, #e6f7ff); /* Colorful gradient background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+/* Main container */
+.container {
+  max-width: 600px;
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  background: #ffffff; /* Clean white background */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 3px solid #ff80ab; /* Pink border for vibrancy */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(255, 128, 171, 0.2);
+}
+
+/* Title styles */
+h1, h2 {
+  text-align: center;
+  color: #ff80ab; /* Bright pink for headings */
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  color: #42a5f5; /* Blue for labels */
+  font-size: 0.95rem;
+}
+
+input[type="text"],
+textarea {
+  padding: 10px;
+  border: 2px solid #80deea; /* Teal border */
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #e1f5fe; /* Light blue background for inputs */
+  outline: none;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #00acc1; /* Darker teal for focus */
+  box-shadow: 0 2px 8px rgba(0, 172, 193, 0.2);
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background: linear-gradient(to right, #ff8a80, #ff5252); /* Gradient with vibrant reds */
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  padding: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button[type="submit"]:hover {
+  background: linear-gradient(to right, #ff5252, #e53935);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(229, 57, 53, 0.3);
+}
+
+/* Lesson list styles */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 2px solid #ffcc80; /* Orange border */
+  border-radius: 10px;
+  background: #fff8e1; /* Pale yellow background */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.2);
+}
+
+li h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #fb8c00; /* Bright orange for list titles */
+}
+
+li p {
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+  color: #6d4c41; /* Earthy brown for descriptions */
+}
+
+strike {
+  color: #9e9e9e;
+  font-style: italic;
+}
+
+/* Delete button */
+li button {
+  background: linear-gradient(to right, #ff80ab, #ff4081); /* Pink gradient for delete */
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+li button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(to right, #f50057, #c51162);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
+  input[type="text"],
+  textarea,
+  button[type="submit"] {
+    font-size: 0.9rem;
+  }
+
+  li h3 {
+    font-size: 1rem;
+  }
+
+  li p {
+    font-size: 0.8rem;
+  }
+}

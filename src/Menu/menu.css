@@ -1,0 +1,145 @@
+.sideBar {
+    background-color: black;
+    color: white;
+    position: fixed;
+    height: 100%;
+    width: auto;
+    transition: 3s;
+    left: -100%;
+    text-align: left;
+}
+
+.sideBar ul li {
+    padding: 9%;
+    text-align: left;
+    list-style: none;
+}
+
+.slide {
+    left: 0%;
+}
+
+
+.menuButton {
+    position: relative;
+    left: 15%;
+}
+
+
+.modalOverLay {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 40%;
+    position: fixed;
+    left: 40%;
+    transform: translate(-29%, 0%);
+    top: -400Px;
+    border-radius: 2%;
+    transition: 3s;
+
+}
+
+.popupButton {
+    background-color: blue;
+    color: white;
+}
+
+.showModal {
+    top: 10%;
+    transform: translate(-29%, 50%);
+}
+
+.modalDesign {
+    text-align: center;
+    left: 40%;
+    padding: 2%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.modalDesign button {
+    margin: 2vh;
+    background-color: rgb(118, 248, 118);
+    color: red;
+    width: 20%;
+    height: 10%;
+    border-radius: 12%;
+    border: 2px dotted red;
+    font-size: larger;
+}
+
+
+
+.modalDesign label {
+    color: rgb(215, 78, 9);
+    font-weight: 50%;
+    font-size: 90%;
+    font-style: italic;
+
+
+}
+
+.modalDesign input {
+    width: 40%;
+    height: 19%;
+}
+
+.modalDesign h4 {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.modalOverLay .closeButton {
+    position: fixed;
+    right: 5%;
+    top: 5%;
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 4px;
+    cursor: pointer;
+    color: #333;
+}
+
+.modalOverLay .closeButton:hover {
+    color: red;
+}
+
+
+
+.regButton {
+    background-color: blue;
+    color: white;
+}
+.showFaqs {
+    top: 30%;
+    transform: translate(-29%, 50%);
+    /* transform: translate(-29%, 50%); */
+}
+.regDesign{
+    text-align: center;
+    left: 10%;
+    padding: 2%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+.regDesign label {
+    color: rgb(39, 104, 113);
+    font-weight: 50%;
+    font-size: 90%;
+    font-style: italic;
+}
+
+.regOverlay {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 40%;
+    position: fixed;
+    left: 40%;
+    transform: translate(-29%, 0%);
+    top: -400Px;
+    border-radius: 2%;
+}
